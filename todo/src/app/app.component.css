@@ -1,0 +1,111 @@
+.table-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    border: 2px solid #444;
+    border-radius: 10px; 
+    padding: 30px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+  }
+  
+  .card {
+    width: 100%; 
+    max-width: 600px; 
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .card button {
+    background-color: #007bff;
+    color: rgba(255, 255, 255, 0.091);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%; 
+    background-color: white; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+  }
+  
+  th {
+    background-color: #007bff; 
+    color: white; 
+    padding: 15px; 
+    text-align: left; 
+    font-weight: bold; 
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd; 
+    padding: 15px; 
+    text-align: left; 
+  }
+  
+  tr:last-child td {
+    border-bottom: none; 
+  }
+  
+  button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 8px 16px; 
+    margin: 0 5px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  }
+  
+  button:hover {
+    background-color: #0056b3; 
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1; 
+  }
+  
+  
+  .card-title, 
+  .form-label, 
+  .btn-primary {
+    color: #333; 
+  }
+  
+  .form-control {
+    color: #333; 
+  }
+  
