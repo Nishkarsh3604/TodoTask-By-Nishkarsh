@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<Task[]>('http://localhost:5000/tasks') // Replace with your actual API endpoint
+    this.http.get<Task[]>('http://localhost:5000/tasks') 
       .subscribe(tasks => {
         this.tasks = tasks;
       }, error => {
@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
       (response: Task) => {
         console.log('Task inserted successfully', response);
         this.tasks.push(response);
-        this.newTask = { _id: '', title: '', description: '', status: '' }; // Clear the form
+        this.newTask = { _id: '', title: '', description: '', status: '' }; 
       },
       (error) => {
         console.error('Error inserting task', error);
@@ -71,7 +71,7 @@ export class AppComponent implements OnInit {
         if (index !== -1) {
           this.tasks[index] = response;
         }
-        this.newTask = { _id: '', title: '', description: '', status: '' }; // Clear the form
+        this.newTask = { _id: '', title: '', description: '', status: '' };
         this.isEditing = false;
       },
       (error) => {
@@ -81,7 +81,7 @@ export class AppComponent implements OnInit {
   }
 
   public editTask(task: Task) {
-    this.newTask = { ...task }; // Populate the form with the selected task's data
+    this.newTask = { ...task };
     this.isEditing = true;
   }
 }
